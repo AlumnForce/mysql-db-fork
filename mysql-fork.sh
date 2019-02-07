@@ -26,5 +26,6 @@ time bash /opt/scripts/mysql-fork-import-tablespace.sh "$TARGET_DB"
 time bash /opt/scripts/mysql-fork-import-others.sh "$SOURCE_DB" "$TARGET_DB"
 # post tasks
 time bash /opt/scripts/mysql-fork-create-user.sh "$TARGET_DB"
-time bash /opt/scripts/mysql-fork-fake-elasticsearch-index.sh "$TARGET_DB"
+#example of custom task
+#time bash /opt/scripts/mysql-fork-fake-elasticsearch-index.sh "$TARGET_DB"
 time bash /opt/scripts/mysql-fork-update-misc-config.sh "$TARGET_DB"
